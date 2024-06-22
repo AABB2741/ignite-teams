@@ -10,6 +10,7 @@ import theme from "@/theme";
 import { Loading } from "@/components/loading";
 import { StatusBar } from "react-native";
 import { NewGroup } from "@/screens/new-group";
+import { Players } from "@/screens/players";
 
 export default function App() {
 	const [fontsLoaded] = useFonts({
@@ -24,7 +25,7 @@ export default function App() {
 				backgroundColor="transparent"
 				translucent
 			/>
-			{fontsLoaded ? <NewGroup /> : <Loading />}
+			{fontsLoaded ? <Players /> : <Loading />}
 		</ThemeProvider>
 	);
 }
